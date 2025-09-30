@@ -1,0 +1,30 @@
+<section class="projects" id="projects">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="section-header text-center">
+      <h2>My Projects</h2>
+      <div class="underline"></div>
+      <p>
+        Here are some of my featured works that combine creativity, performance, and clean design.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4 mt-4">
+      
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+        <div #projectCard class="project-card">
+          <div class="project-content">
+            <h5>{{ project.title }}</h5>
+            <p>{{ project.description }}</p>
+            <a [href]="project.link" target="_blank" class="btn btn-outline-secondary">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

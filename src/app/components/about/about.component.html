@@ -1,0 +1,33 @@
+<section class="about" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-lg-10 about-text text-center">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+
+        <!-- Intro Paragraphs -->
+        <p #paragraph [innerHTML]="aboutIntro()"></p>
+        <p #paragraph [innerHTML]="aboutCommitment()"></p>
+        <p #paragraph [innerHTML]="aboutExplore()"></p>
+
+        <!-- Feature Boxes -->
+        <div class="row about-features mt-5">
+          <div class="col-md-3 col-6 mb-4" *ngFor="let feature of features">
+            <div #featureBox class="feature-box text-center">
+              <i [class]="feature.icon"></i>
+              <h5>{{ feature.title }}</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons (no animation) -->
+        <div class="mt-4">
+          <a [href]="contactLink()" class="btn btn-primary me-3">Contact Me</a>
+          <a [href]="projectsLink()" class="btn btn-outline-secondary">View Projects</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

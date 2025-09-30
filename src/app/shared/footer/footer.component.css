@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer p, .footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Social Icons */
+.social-icons a i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+  color: var(--secondary-color);
+}
+
+/* Adjust spacing between icon and text */
+.footer-contact i {
+  margin-right: 0.5rem; /* Space between icon and email/phone */
+  vertical-align: middle; /* Align icons with text */
+}
+
+.footer-contact a {
+  margin-bottom: 0.5rem; 
+  display: inline-block;
+}
+/* ------------------ Media Queries ------------------ */
+
+/* Small devices (phones, <768px) */
+@media (max-width: 767px) {
+  .footer {
+    padding: 3rem 1rem; 
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.1rem; 
+    margin-bottom: 0.8rem;
+  }
+
+  .footer p, .footer a {
+    font-size: 0.85rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.3rem; 
+    margin-right: 0.4rem;
+  }
+
+  .footer-contact i {
+    margin-right: 0.3rem;
+  }
+
+  .footer-contact a {
+    margin-bottom: 0.4rem;
+    display: inline-block;
+  }
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .footer-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .footer p, .footer a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.4rem;
+    margin-right: 0.45rem;
+  }
+
+  .footer-contact i {
+    margin-right: 0.4rem;
+  }
+
+  .footer-contact a {
+    margin-bottom: 0.45rem;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,221 @@
+/* About Section Wrapper */
+.about {
+  padding: 6rem 0; /* vertical spacing */
+  background-color: var(--bg-primary); /* section background */
+}
+
+/* Section Title */
+.about h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; /* uppercase letters */
+  letter-spacing: 1px; /* space between letters */
+}
+
+/* Underline below title */
+.about .underline {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  margin: 0 auto 2.5rem auto; /* centered with bottom spacing */
+  border-radius: 3px;
+}
+
+/* Paragraph styling */
+.about p {
+  font-size: 1.15rem;
+  color: var(--paragraph-color);
+  margin-bottom: 1.7rem; /* spacing between paragraphs */
+  line-height: 1.9; /* readability */
+}
+
+/* Highlighted text */
+.about .highlight {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Features Row */
+.about-features {
+  margin-top: 3rem;
+}
+
+/* Individual Feature Box */
+.feature-box {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.05); /* subtle shadow */
+  transition: transform 0.35s ease, box-shadow 0.35s ease; /* hover effects */
+  text-align: center;
+}
+
+/* Feature Icon */
+.feature-box i {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* hover animation */
+}
+
+/* Feature Title */
+.feature-box h5 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Feature Box Hover */
+.feature-box:hover {
+  transform: translateY(-8px); /* lift effect */
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.1); /* deeper shadow */
+}
+
+/* Icon Hover Effect */
+.feature-box:hover i {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+/* Buttons in About Section */
+.about .btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.about .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+/* Primary Button Hover */
+.about .btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Outline Button */
+.about .btn-outline-secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+}
+
+/* Outline Button Hover */
+.about .btn-outline-secondary:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+/* ------------------ Media Queries ------------------ */
+
+/* Small devices (phones, <768px) */
+@media (max-width: 767px) {
+  .about {
+    padding: 3rem 1rem; 
+  }
+
+  .about h2 {
+    font-size: 1.8rem; 
+  }
+
+  .about .underline {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 2rem;
+  }
+
+  .about p {
+    font-size: 0.95rem; 
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Feature Boxes */
+  .feature-box {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .feature-box i {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature-box h5 {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+  .about .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-features {
+    margin-top: 2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+    padding: 4.5rem 2rem;
+  }
+
+  .about h2 {
+    font-size: 2.1rem;
+  }
+
+  .about .underline {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .feature-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-box i {
+    font-size: 2.2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .feature-box h5 {
+    font-size: 1.05rem;
+  }
+
+  .about .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .about-features {
+    margin-top: 2.5rem;
+  }
+}
+
+  .feature-box h5 {
+    font-size: 1.05rem;
+  }
+
+  .about .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .about-features {
+    margin-top: 2.5rem;
+  }
+
+

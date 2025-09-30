@@ -1,0 +1,143 @@
+/* Contact Section */
+.contact {
+  padding: 5rem 0;
+  background-color: var(--bg-primary);
+}
+
+/* Section Header */
+.contact .section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact .section-header .underline {
+  width: 60px;
+  height: 3px;
+  background: var(--secondary-color);
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.contact .section-header p {
+  font-size: 1.1rem;
+  color: var(--paragraph-color);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Contact Form */
+.contact-form .form-label {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(32, 201, 151, 0.3);
+}
+
+
+
+.contact-form  .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+/* ------------------ Media Queries ------------------ */
+
+/* Small devices (phones, <768px) */
+@media (max-width: 767px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact .section-header h2 {
+    font-size: 1.8rem; 
+  }
+
+  .contact .section-header .underline {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .contact .section-header p {
+    font-size: 0.95rem; 
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  /* Form Inputs */
+  .contact-form .form-label {
+    font-size: 0.95rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Submit Button */
+  .contact-form .btn-primary {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+
+  .contact .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact .section-header .underline {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact .section-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 550px;
+  }
+
+  /* Form Inputs */
+  .contact-form .form-label {
+    font-size: 1rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.95rem;
+    padding: 0.55rem 1rem;
+  }
+
+  /* Submit Button */
+  .contact-form .btn-primary {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
