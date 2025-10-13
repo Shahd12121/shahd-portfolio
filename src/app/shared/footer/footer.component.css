@@ -1,103 +1,160 @@
+/* ===================== Footer Base ===================== */
 .footer {
   background-color: var(--primary-color);
   color: #fff;
+  padding: 4rem 1rem 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
+/* ===================== Footer Title ===================== */
 .footer-title {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
-.footer p, .footer a {
+/* ===================== Footer Text & Links ===================== */
+.footer p,
+.footer a {
   color: #fff;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  opacity: 0.9;
+  transition: color 0.25s ease-in-out;
 }
 
 .footer a:hover {
   color: var(--secondary-color);
 }
 
-/* Social Icons */
+/* ===================== Contact Link ===================== */
+.footer-link {
+  font-size: 1.4rem !important;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* ===================== Social Icons ===================== */
 .social-icons a i {
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+  font-size: 1.8rem !important;
+  color: #fff !important;
+  margin: 0 16px;
+  display: inline-block;
+  transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+  vertical-align: middle;
 }
 
 .social-icons a:hover i {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
+  transform: scale(1.3);
 }
 
-/* Adjust spacing between icon and text */
-.footer-contact i {
-  margin-right: 0.5rem; /* Space between icon and email/phone */
-  vertical-align: middle; /* Align icons with text */
+/* ===================== Bottom Text ===================== */
+.small-text {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1.5rem;
 }
 
-.footer-contact a {
-  margin-bottom: 0.5rem; 
-  display: inline-block;
-}
-/* ------------------ Media Queries ------------------ */
+/* 
+  display: block;
+  margin-left: 0; 
+  text-align: left;  */
 
-/* Small devices (phones, <768px) */
+
+
+/* ===================== Extra Large Screens (≥1200px) ===================== */
+@media (min-width: 1200px) {
+  .footer .container {
+    max-width: 1200px;
+    padding-left: 10rem; 
+    padding-right: 7rem; 
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.9rem !important;
+  }
+}
+
+/* ===================== Large Screens (992px - 1199px) ===================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer .container {
+    padding-left: 5rem;  
+    padding-right: 5rem; 
+  }
+
+  .footer-title {
+    font-size: 1.35rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.7rem !important;
+  }
+
+  
+}
+
+/* ===================== Medium Screens (768px - 991px) ===================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer .container {
+    padding-left: 2rem;  
+    padding-right: 3rem; 
+  }
+
+  .footer-title {
+    font-size: 1.25rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.6rem !important;
+  }
+  .footer .footer-title , .footer p {
+    display: block;
+    margin-left: 0; 
+    text-align: left; 
+  }
+}
+
+/* ===================== Small Screens (<768px) ===================== */
 @media (max-width: 767px) {
   .footer {
-    padding: 3rem 1rem; 
+    padding: 2.5rem 1rem 2rem;
     text-align: center;
   }
 
-  .footer-title {
-    font-size: 1.1rem; 
-    margin-bottom: 0.8rem;
+  .footer .container {
+    padding-left: 0;  
+    padding-right: 0;
   }
 
-  .footer p, .footer a {
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.4rem !important;
+    margin: 0 10px;
+  }
+
+  .footer-link {
+    font-size: 1.05rem !important;
+  }
+
+  .small-text {
     font-size: 0.85rem;
-  }
-
-  .social-icons a i {
-    font-size: 1.3rem; 
-    margin-right: 0.4rem;
-  }
-
-  .footer-contact i {
-    margin-right: 0.3rem;
-  }
-
-  .footer-contact a {
-    margin-bottom: 0.4rem;
-    display: inline-block;
-  }
-}
-
-/* Medium devices (tablets, 768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer {
-    padding: 4rem 2rem;
-  }
-
-  .footer-title {
-    font-size: 1.15rem;
-    margin-bottom: 0.9rem;
-  }
-
-  .footer p, .footer a {
-    font-size: 0.9rem;
-  }
-
-  .social-icons a i {
-    font-size: 1.4rem;
-    margin-right: 0.45rem;
-  }
-
-  .footer-contact i {
-    margin-right: 0.4rem;
-  }
-
-  .footer-contact a {
-    margin-bottom: 0.45rem;
-    display: inline-block;
   }
 }

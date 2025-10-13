@@ -1,20 +1,28 @@
+<!-- ========== Navbar ========== -->
 <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <!-- logo-->
-    <a class="navbar-brand" href="#hero">Shahd Al-Numany</a>
+  <div class="container main-container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#hero1">Shahd Al-Numany</a>
 
-    <!-- icon in mobile-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- links-->
+    <!-- Nav Links -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav nav-links">
-        <li class="nav-item" *ngFor="let item of items">
-          <a class="nav-link" [attr.href]="item.href">{{ item.label }}</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="#hero1">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
